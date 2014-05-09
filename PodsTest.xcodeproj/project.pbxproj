@@ -24,6 +24,7 @@
 		AB9E64C9191B42ED00084ED6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9E64AD191B42ED00084ED6 /* CoreData.framework */; };
 		AB9E64D1191B42ED00084ED6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB9E64CF191B42ED00084ED6 /* InfoPlist.strings */; };
 		AB9E64D3191B42ED00084ED6 /* PodsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E64D2191B42ED00084ED6 /* PodsTestTests.m */; };
+		ABBD3E39191C6C0600E7A895 /* CustomUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBD3E38191C6C0600E7A895 /* CustomUITableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		AB9E64D0191B42ED00084ED6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB9E64D2191B42ED00084ED6 /* PodsTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PodsTestTests.m; sourceTree = "<group>"; };
 		ABBD3E36191B7FA100E7A895 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		ABBD3E37191C6C0600E7A895 /* CustomUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUITableViewCell.h; sourceTree = "<group>"; };
+		ABBD3E38191C6C0600E7A895 /* CustomUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUITableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				AB596580191B485F005BD271 /* PTViewController.h */,
 				AB596581191B485F005BD271 /* PTViewController.m */,
 				ABBD3E36191B7FA100E7A895 /* Global.h */,
+				ABBD3E37191C6C0600E7A895 /* CustomUITableViewCell.h */,
+				ABBD3E38191C6C0600E7A895 /* CustomUITableViewCell.m */,
 			);
 			path = PodsTest;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB596582191B485F005BD271 /* PTViewController.m in Sources */,
+				ABBD3E39191C6C0600E7A895 /* CustomUITableViewCell.m in Sources */,
 				AB9E64BA191B42ED00084ED6 /* PTAppDelegate.m in Sources */,
 				AB9E64BD191B42ED00084ED6 /* PodsTest.xcdatamodeld in Sources */,
 				AB9E64B6191B42ED00084ED6 /* main.m in Sources */,
