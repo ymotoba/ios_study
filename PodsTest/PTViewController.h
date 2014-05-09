@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PTViewController : UIViewController
+@interface PTViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property NSArray *exampleTitleList;
+@property UITableView *exampleListTableView;
 
 @end

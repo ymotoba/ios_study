@@ -1,0 +1,19 @@
+PODS:
+  - Reachability (3.0.0)
+  - SDWebImage (3.6):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.6)
+  - UIActivityIndicator-for-SDWebImage (1.0.5):
+    - SDWebImage (~> 3.2)
+
+DEPENDENCIES:
+  - Reachability (~> 3.0.0)
+  - SDWebImage (~> 3.6)
+  - UIActivityIndicator-for-SDWebImage (~> 1.0.5)
+
+SPEC CHECKSUMS:
+  Reachability: 500bd76bf6cd8ff2c6fb715fc5f44ef6e4c024f2
+  SDWebImage: 7eb273e54ca8a2e506ad9bd5e80c35b2a4d7c95e
+  UIActivityIndicator-for-SDWebImage: 6ab42f95a4066339e2338c3326679a526ce2ef64
+
+COCOAPODS: 0.32.1

@@ -7,6 +7,7 @@
 //
 
 #import "PTAppDelegate.h"
+#import "PTViewController.h"
 
 @implementation PTAppDelegate
 
@@ -20,6 +21,9 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    PTViewController *ptViewController = [[PTViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:ptViewController];
+    [self.window setRootViewController:nav];
     return YES;
 }
 
