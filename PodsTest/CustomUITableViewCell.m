@@ -28,14 +28,22 @@
 	// Configure the view for the selected state
 }
 
-//- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
-//	[super setHighlighted:highlighted animated:animated];
-//	if (highlighted) {
-//		self.alpha = 0.5f;
-//	}
-//	else {
-//		self.alpha = 1.0f;
-//	}
-//}
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
+	[super setHighlighted:highlighted animated:animated];
+	if (highlighted) {
+		self.alpha = 0.5f;
+//		UIView *cellBackgroundView = [[UIView alloc] initWithFrame:self.bounds];
+//		cellBackgroundView.backgroundColor = [UIColor blueColor];
+//		self.backgroundView = cellBackgroundView;
+//		[self.textLabel setBackgroundColor:cellBackgroundView.backgroundColor];
+	}
+	else {
+		self.alpha = 1.0f;
+//		UIView *cellBackgroundView = [[UIView alloc] initWithFrame:self.bounds];
+//		cellBackgroundView.backgroundColor = [UIColor whiteColor];
+//		self.backgroundView = cellBackgroundView;
+//		[self.textLabel setBackgroundColor:cellBackgroundView.backgroundColor];
+	}
+}
 
 @end

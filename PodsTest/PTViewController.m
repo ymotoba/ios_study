@@ -49,7 +49,7 @@
 	_exampleListTableView.backgroundColor = [UIColor whiteColor];
 	_exampleListTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 	_exampleListTableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
-	[_exampleListTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CustomOneCell"];
+	[_exampleListTableView registerClass:[CustomUITableViewCell class] forCellReuseIdentifier:@"CustomOneCell"];
 	[self.view addSubview:_exampleListTableView];
 }
 
@@ -63,7 +63,7 @@
 	int index = [indexPath indexAtPosition:[indexPath length] - 1];
 	static NSString *CellIdentifier = @"CustomOneCell";
 	// カスタムセルにキャスト。キャストすることによりカスタムセルのpropertyが使える
-	UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+	CustomUITableViewCell *cell = (CustomUITableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
 	// セルの右側に矢印アイコンを表示
 	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 
@@ -82,6 +82,7 @@
 	borderline.backgroundColor = RGBA(0.7f, 0.7f, 0.7f, 1.0f);
 	[cell.contentView addSubview:borderline];
 
+	cell.selectionStyle = UITableViewCellSelectionStyleNone;
 	return cell;
 }
 
