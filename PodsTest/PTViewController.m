@@ -61,7 +61,7 @@
 	int index = [indexPath indexAtPosition:[indexPath length] - 1];
 	// 0 → Tab
 	if (index == 0) {
-		UITabBarController *tabBarController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
+		PTTabViewController *tabBarController = [[PTTabViewController alloc] initWithNibName:nil bundle:nil];
 		PTTab1ViewController *tab1ViewController = [[PTTab1ViewController alloc] initWithNibName:nil bundle:nil];
 		PTTab2ViewController *tab2ViewController = [[PTTab2ViewController alloc] initWithNibName:nil bundle:nil];
 		NSArray *tabControllerArray = [NSArray arrayWithObjects:tab1ViewController, tab2ViewController, nil];

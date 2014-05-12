@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.tabBarController setTitle:@"Tab1Title"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,6 +36,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+// タブ選択delegate
+- (void) didSelect:(PTTabViewController*) tabBarController {
+    LOG(@"tab1 selected");
+}
 /*
 #pragma mark - Navigation
 

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PTTab1ViewController.h"
 #import "PTTab2ViewController.h"
+#import "PTTabViewController.h"
 
 @interface PTViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 

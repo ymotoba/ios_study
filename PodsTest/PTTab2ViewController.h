@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PTTabViewController.h"
 
-@interface PTTab2ViewController : UIViewController
+@interface PTTab2ViewController : UIViewController <PTTabBarControllerDelegate>
 
 @end
