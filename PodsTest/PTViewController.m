@@ -32,11 +32,9 @@
 	[self setExampleTableView];
 }
 
-#pragma mark - My List
-
 // テーブルビューに表示するリスト登録
 - (void)setupExampleTitleList {
-	_exampleTitleList = @[@"SDWebImageView", @"Tab", @"JSON", @"XML", @"json2table", @"navigation", @"coredata"];
+	_exampleTitleList = @[@"Tab", @"JSON", @"XML", @"json2table", @"navigation", @"coredata"];
 }
 
 - (void)setExampleTableView {
@@ -56,6 +54,23 @@
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
 	// Dispose of any resources that can be recreated.
+}
+
+// セルタップ時
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	int index = [indexPath indexAtPosition:[indexPath length] - 1];
+	// 0 → Tab
+	if (index == 0) {
+		UITabBarController *tabBarController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
+		PTTab1ViewController *tab1ViewController = [[PTTab1ViewController alloc] initWithNibName:nil bundle:nil];
+		PTTab2ViewController *tab2ViewController = [[PTTab2ViewController alloc] initWithNibName:nil bundle:nil];
+		NSArray *tabControllerArray = [NSArray arrayWithObjects:tab1ViewController, tab2ViewController, nil];
+		[tabBarController setViewControllers:tabControllerArray];
+		NSArray *tabItemArray = tabBarController.tabBar.items;
+		[[tabItemArray objectAtIndex:0] setTitle:@"Tab1"];
+		[[tabItemArray objectAtIndex:1] setTitle:@"Tab2"];
+        [self.navigationController pushViewController:tabBarController animated:TRUE];
+	}
 }
 
 // セルの定義

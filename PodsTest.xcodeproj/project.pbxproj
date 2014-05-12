@@ -25,6 +25,8 @@
 		AB9E64D1191B42ED00084ED6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB9E64CF191B42ED00084ED6 /* InfoPlist.strings */; };
 		AB9E64D3191B42ED00084ED6 /* PodsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E64D2191B42ED00084ED6 /* PodsTestTests.m */; };
 		ABBD3E39191C6C0600E7A895 /* CustomUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBD3E38191C6C0600E7A895 /* CustomUITableViewCell.m */; };
+		ABE96D7F192050A5002DC3C4 /* PTTab1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE96D7E192050A5002DC3C4 /* PTTab1ViewController.m */; };
+		ABE96D82192050B3002DC3C4 /* PTTab2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE96D81192050B3002DC3C4 /* PTTab2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		ABBD3E36191B7FA100E7A895 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		ABBD3E37191C6C0600E7A895 /* CustomUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUITableViewCell.h; sourceTree = "<group>"; };
 		ABBD3E38191C6C0600E7A895 /* CustomUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUITableViewCell.m; sourceTree = "<group>"; };
+		ABE96D7D192050A5002DC3C4 /* PTTab1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTab1ViewController.h; sourceTree = "<group>"; };
+		ABE96D7E192050A5002DC3C4 /* PTTab1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTab1ViewController.m; sourceTree = "<group>"; };
+		ABE96D80192050B3002DC3C4 /* PTTab2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTab2ViewController.h; sourceTree = "<group>"; };
+		ABE96D81192050B3002DC3C4 /* PTTab2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTab2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,7 @@
 		AB9E64AF191B42ED00084ED6 /* PodsTest */ = {
 			isa = PBXGroup;
 			children = (
+				ABE96D7C19204D1C002DC3C4 /* Tab */,
 				AB9E64B8191B42ED00084ED6 /* PTAppDelegate.h */,
 				AB9E64B9191B42ED00084ED6 /* PTAppDelegate.m */,
 				AB9E64BE191B42ED00084ED6 /* Images.xcassets */,
@@ -169,6 +176,17 @@
 				AB9E64CF191B42ED00084ED6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABE96D7C19204D1C002DC3C4 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				ABE96D7D192050A5002DC3C4 /* PTTab1ViewController.h */,
+				ABE96D7E192050A5002DC3C4 /* PTTab1ViewController.m */,
+				ABE96D80192050B3002DC3C4 /* PTTab2ViewController.h */,
+				ABE96D81192050B3002DC3C4 /* PTTab2ViewController.m */,
+			);
+			name = Tab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +322,8 @@
 			files = (
 				AB596582191B485F005BD271 /* PTViewController.m in Sources */,
 				ABBD3E39191C6C0600E7A895 /* CustomUITableViewCell.m in Sources */,
+				ABE96D7F192050A5002DC3C4 /* PTTab1ViewController.m in Sources */,
+				ABE96D82192050B3002DC3C4 /* PTTab2ViewController.m in Sources */,
 				AB9E64BA191B42ED00084ED6 /* PTAppDelegate.m in Sources */,
 				AB9E64BD191B42ED00084ED6 /* PodsTest.xcdatamodeld in Sources */,
 				AB9E64B6191B42ED00084ED6 /* main.m in Sources */,
