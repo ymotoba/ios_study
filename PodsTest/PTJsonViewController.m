@@ -47,8 +47,7 @@
 }
 
 - (void) clickStartFetchButton:(id) sender {
-    _webApiSample = [[WebApiSample alloc] init];
-    NSURLConnection *connection = [_webApiSample fechApi:self];
+    NSURLConnection *connection = [WebApiSample fechApi:self];
     if (!connection) {
         LOG(@"connection failed1");
     }

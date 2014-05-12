@@ -10,6 +10,6 @@
 
 @interface WebApiSample : NSObject <NSURLConnectionDataDelegate>
 
-- (NSURLConnection *)fechApi:(id <NSURLConnectionDataDelegate>) delegateClass;
++ (NSURLConnection *)fechApi:(id <NSURLConnectionDataDelegate>) delegateClass;
 
 @end

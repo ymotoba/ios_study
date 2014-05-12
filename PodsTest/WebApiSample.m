@@ -10,7 +10,7 @@
 
 @implementation WebApiSample
 
-- (NSURLConnection *)fechApi:(id <NSURLConnectionDataDelegate>) delegateClass {
++ (NSURLConnection *)fechApi:(id <NSURLConnectionDataDelegate>) delegateClass {
 	NSURLRequest *urlRequest = [NSURLRequest requestWithURL:
 	                            [NSURL URLWithString:@"http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=8ac00925df0f7d8c&large_area=Z011&format=json"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
 	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:urlRequest delegate:delegateClass];

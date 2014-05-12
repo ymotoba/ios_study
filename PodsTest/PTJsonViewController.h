@@ -13,6 +13,5 @@
 @interface PTJsonViewController : UIViewController <NSURLConnectionDataDelegate>
 
 @property (nonatomic, retain) NSMutableData *receivedData;
-@property (nonatomic, retain) WebApiSample *webApiSample;
 
 @end
