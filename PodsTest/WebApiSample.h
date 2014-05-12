@@ -10,7 +10,6 @@
 
 @interface WebApiSample : NSObject <NSURLConnectionDataDelegate>
 
-@property (nonatomic, retain) NSMutableData *receivedData;
+- (NSURLConnection *)fechApi:(id <NSURLConnectionDataDelegate>) delegateClass;
 
-- (void) fechApi;
 @end
