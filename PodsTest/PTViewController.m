@@ -40,8 +40,6 @@
 - (void)setExampleTableView {
 	// 初期化
 	_exampleListTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_BOUNDS.size.width, SCREEN_BOUNDS.size.height) style:UITableViewStylePlain];
-	LOG(@"   screen width:%f, height:%f", SCREEN_BOUNDS.size.width, SCREEN_BOUNDS.size.height);
-	LOG(@"appscreen width:%f, height:%f", APP_SCREEN_BOUNDS.size.width, APP_SCREEN_BOUNDS.size.height);
 	_exampleListTableView.delegate = self;
 	_exampleListTableView.dataSource = self;
 	_exampleListTableView.backgroundColor = [UIColor whiteColor];
