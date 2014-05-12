@@ -6,6 +6,12 @@
 // project.
 
 
+// FSNetworking
+#define COCOAPODS_POD_AVAILABLE_FSNetworking
+#define COCOAPODS_VERSION_MAJOR_FSNetworking 0
+#define COCOAPODS_VERSION_MINOR_FSNetworking 0
+#define COCOAPODS_VERSION_PATCH_FSNetworking 1
+
 // Reachability
 #define COCOAPODS_POD_AVAILABLE_Reachability
 #define COCOAPODS_VERSION_MAJOR_Reachability 3

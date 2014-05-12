@@ -34,7 +34,7 @@
 
 // テーブルビューに表示するリスト登録
 - (void)setupExampleTitleList {
-	_exampleTitleList = @[@"Tab", @"JSON", @"XML", @"json2table", @"navigation", @"coredata"];
+	_exampleTitleList = @[@"Tab", @"JSON", @"Table", @"XML", @"json2table", @"navigation", @"coredata"];
 }
 
 - (void)setExampleTableView {
@@ -68,7 +68,11 @@
 		[[tabItemArray objectAtIndex:0] setTitle:@"Tab1"];
 		[[tabItemArray objectAtIndex:1] setTitle:@"Tab2"];
         [self.navigationController pushViewController:tabBarController animated:TRUE];
-	}
+    // JSON
+	} else if (index == 1) {
+        PTJsonViewController *jsonViewController = [[PTJsonViewController alloc] init];
+        [self.navigationController pushViewController:jsonViewController animated:TRUE];
+    }
 }
 
 // セルの定義

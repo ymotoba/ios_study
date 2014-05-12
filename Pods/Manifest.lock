@@ -1,4 +1,5 @@
 PODS:
+  - FSNetworking (0.0.1)
   - Reachability (3.0.0)
   - SDWebImage (3.6):
     - SDWebImage/Core
@@ -7,11 +8,13 @@ PODS:
     - SDWebImage (~> 3.2)
 
 DEPENDENCIES:
+  - FSNetworking (~> 0.0.1)
   - Reachability (~> 3.0.0)
   - SDWebImage (~> 3.6)
   - UIActivityIndicator-for-SDWebImage (~> 1.0.5)
 
 SPEC CHECKSUMS:
+  FSNetworking: 676e31d646599b2cc3ebc5c1527e503a02eab4f0
   Reachability: 500bd76bf6cd8ff2c6fb715fc5f44ef6e4c024f2
   SDWebImage: 7eb273e54ca8a2e506ad9bd5e80c35b2a4d7c95e
   UIActivityIndicator-for-SDWebImage: 6ab42f95a4066339e2338c3326679a526ce2ef64

@@ -4,3 +4,4 @@ platform :ios, 6.0
 pod 'Reachability', '~> 3.0.0'
 pod 'SDWebImage', '~> 3.6'
 pod 'UIActivityIndicator-for-SDWebImage', '~> 1.0.5'
+pod 'FSNetworking', '~> 0.0.1'

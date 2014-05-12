@@ -10,6 +10,7 @@
 #import "PTTab1ViewController.h"
 #import "PTTab2ViewController.h"
 #import "PTTabViewController.h"
+#import "PTJsonViewController.h"
 
 @interface PTViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 

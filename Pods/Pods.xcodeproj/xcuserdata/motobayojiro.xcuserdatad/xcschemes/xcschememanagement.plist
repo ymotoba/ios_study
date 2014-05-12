@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-FSNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Reachability.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2F7789524FDB4C989CEF12CC</key>
+		<key>22FC460D38F747D082C470C7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5DB3D984E0154190AEFA10DD</key>
+		<key>341621AF8BE748689236211A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>611B92AB23CE4D4BAF245D33</key>
+		<key>3BFC577D478A452A853E2355</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6DF63AD01DEC43B8941C9057</key>
+		<key>8E9D4BC1066D4589948F87D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C074BF70996E40E3973BAE1A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
