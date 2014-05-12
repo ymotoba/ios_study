@@ -38,7 +38,7 @@
 
 // タブ選択delegate
 - (void) didSelect:(PTTabViewController*) tabBarController {
-    LOG(@"tab2 selected");
+    [self.tabBarController setTitle:@"Tab2Title"];
 }
 
 /*
