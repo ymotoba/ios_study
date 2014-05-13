@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-DCKeyValueObjectMapping.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-FSNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-JSONKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>22FC460D38F747D082C470C7</key>
+		<key>1F5E2E242D5340A6A0891E63</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>341621AF8BE748689236211A</key>
+		<key>3794F79F1E0B4E19BAA8C001</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3BFC577D478A452A853E2355</key>
+		<key>3E732CC70BEA4145A35CB5E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8E9D4BC1066D4589948F87D7</key>
+		<key>4FADB49C195B4808A9275A8E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C074BF70996E40E3973BAE1A</key>
+		<key>B401FADB940C4DE2903697F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9E941789B554421B722E058</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FB48719FC2144CA2B8D900FE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

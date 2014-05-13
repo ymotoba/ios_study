@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import "WebApiSample.h"
+#import "DCKeyValueObjectMapping.h"
+#import "Gourmet.h"
+#import "DCParserConfiguration.h"
+#import "DCArrayMapping.h"
 
 @interface PTJsonViewController : UIViewController <WebApiSampleConnectionDataDelegate>
 

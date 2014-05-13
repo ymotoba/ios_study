@@ -55,6 +55,19 @@
 - (void)didSuccess:(NSDictionary *)response {
     LOG(@"didSuccess!");
     [[response objectForKey:@"results"] objectForKey:@"results_start"];
+
+    // mapper
+    DCArrayMapping *mapper = [DCArrayMapping mapperForClassElements:[Shop class] forAttribute:@"shop" onClass:[Results class]];
+    DCParserConfiguration *config = [DCParserConfiguration configuration];
+    [config addArrayMapper:mapper];
+
+    DCKeyValueObjectMapping *parser = [DCKeyValueObjectMapping mapperForClass: [Gourmet class] andConfiguration:config];
+    Gourmet *gourmet = [parser parseDictionary:response];
+    NSLog(@"%@", gourmet.results.resultsStart);
+    NSLog(@"%@", gourmet.results.resultsReturned);
+    Shop *shop = ((Shop*)[gourmet.results.shop objectAtIndex:0]);
+    NSLog(@"%@", shop.nameKana);
+    NSLog(@"%@", shop.photo.pc.l);
 }
 - (void)didFailWithError:(NSError *)error {
     LOG(@"didFailWithError!");

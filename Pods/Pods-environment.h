@@ -6,11 +6,24 @@
 // project.
 
 
+// DCKeyValueObjectMapping
+#define COCOAPODS_POD_AVAILABLE_DCKeyValueObjectMapping
+#define COCOAPODS_VERSION_MAJOR_DCKeyValueObjectMapping 1
+#define COCOAPODS_VERSION_MINOR_DCKeyValueObjectMapping 4
+#define COCOAPODS_VERSION_PATCH_DCKeyValueObjectMapping 0
+
 // FSNetworking
 #define COCOAPODS_POD_AVAILABLE_FSNetworking
 #define COCOAPODS_VERSION_MAJOR_FSNetworking 0
 #define COCOAPODS_VERSION_MINOR_FSNetworking 0
 #define COCOAPODS_VERSION_PATCH_FSNetworking 1
+
+// JSONKit
+#define COCOAPODS_POD_AVAILABLE_JSONKit
+// This library does not follow semantic-versioning,
+// so we were not able to define version macros.
+// Please contact the author.
+// Version: 1.5pre.
 
 // Reachability
 #define COCOAPODS_POD_AVAILABLE_Reachability
