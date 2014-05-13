@@ -37,6 +37,31 @@
     [[startFetchButton layer] setBorderWidth:1.0f];
     [startFetchButton addTarget:self action:@selector(clickStartFetchButton:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:startFetchButton];
+
+    UIImage *(^createImageFromUIColor)(UIColor *) = ^(UIColor *color)
+    {
+        CGRect rect = CGRectMake(0, 0, 1, 1);
+        UIGraphicsBeginImageContext(rect.size);
+        CGContextRef contextRef = UIGraphicsGetCurrentContext();
+        CGContextSetFillColorWithColor(contextRef, [color CGColor]);
+        CGContextFillRect(contextRef, rect);
+        UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        return img;
+    };
+    UIButton *backgroundButton = [[UIButton alloc] init];
+    backgroundButton.frame = CGRectMake(startFetchButton.frame.origin.x,
+                                        startFetchButton.frame.origin.y + startFetchButton.frame.size.height + 10.0,
+                                        startFetchButton.frame.size.width,
+                                        startFetchButton.frame.size.height);
+    [backgroundButton setTitle:@"test" forState:UIControlStateNormal];
+    [[backgroundButton layer] setCornerRadius:2.5f];
+    [backgroundButton setClipsToBounds:TRUE];
+    [[backgroundButton layer] setBorderColor:[RGB(0, 0, 0) CGColor]];
+    [[backgroundButton layer] setBorderWidth:0.5f];
+    [backgroundButton setBackgroundImage:createImageFromUIColor(RGB(128, 128 ,128)) forState:UIControlStateHighlighted];
+    [self.view addSubview:backgroundButton];
+//    [backgroundButton addTarget:self action:@selector(backgroundButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning {

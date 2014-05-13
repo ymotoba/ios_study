@@ -13,4 +13,5 @@
 @interface CustomCellSample : UITableViewCell
 @property (nonatomic, retain) UILabel *text1;
 @property (nonatomic, retain) UIImageView *webImageView;
+@property (nonatomic, retain) UIButton *backgroundButton;
 @end
