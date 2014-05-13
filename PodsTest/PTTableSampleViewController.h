@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomCellSample.h"
+#import "SampleData.h"
 
-@interface PTTableSampleViewController : UIViewController
-
+@interface PTTableSampleViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, retain) NSMutableArray *tableDataArray;
 @end
