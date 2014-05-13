@@ -34,7 +34,7 @@
     for (int i = 0; i < 20; i++) {
         SampleData *sampleData = [[SampleData alloc] init];
         sampleData.imageUrl = @"http://imgfp.hotp.jp/IMGH/71/33/P019187133/P019187133_168.jpg";
-        sampleData.labe = [NSString stringWithFormat:@"ラベル%d", i];
+        sampleData.label = [NSString stringWithFormat:@"ラベルラベル%d", i];
         [_tableDataArray addObject:sampleData];
     }
     // table setting
@@ -65,9 +65,16 @@
     // WebImage
     [cell.webImageView setImageWithURL:[cellItem imageUrl2NSURL] usingActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     // ラベル
-    [cell.text1 setText:cellItem.labe];
-    [cell.text1 sizeToFit];
-    LOG(@"%f", cell.text1.frame.size.height);
+    [cell.text1 setText:cellItem.label];
+    // sizeToFitしてしまうと最初の幅で固定になるようなので、1回ずつframeを算出する
+    NSDictionary *attributes = @{NSFontAttributeName: [UIFont systemFontOfSize:14.0f]};
+    CGRect textRect = [cellItem.label boundingRectWithSize:CGSizeMake(cell.text1.frame.size.width, MAXFLOAT)
+                                                  options:NSStringDrawingUsesFontLeading
+                                               attributes:attributes context:nil];
+    // textRectのx,yは0,0なので、ここでx,yを再設定
+    textRect.origin.x = cell.text1.frame.origin.x;
+    textRect.origin.y = cell.text1.frame.origin.y;
+    cell.text1.frame = textRect;
 	return cell;
 }
 
@@ -83,6 +90,11 @@
 
 // セル高さを設定
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//	int index = [indexPath indexAtPosition:[indexPath length] - 1];
+//    SampleData *cellItem = [_tableDataArray objectAtIndex:index];
+//    NSDictionary *attributes = @{NSFontAttributeName: [UIFont systemFontOfSize:14.0f]};
+//    CGRect textRect = [cellItem.labe boundingRectWithSize:CGSizeMake(SCREEN_BOUNDS.size.width - 20 - 80, MAXFLOAT) options:NSStringDrawingUsesFontLeading attributes:attributes context:nil];
+    // 本当は上記で得られるサイズを元に動的に高さを変える必要があるけど、練習なので固定
 	return 100;
 }
 

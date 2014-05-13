@@ -24,11 +24,10 @@ static const CGFloat MERGIN = 10.0;
         // label
         _text1 = [[UILabel alloc] init];
         _text1.numberOfLines = 0;
-        // sizeToFitするので幅、高さは0
         _text1.frame = CGRectMake(_webImageView.frame.origin.x + _webImageView.frame.size.width + MERGIN,
                                   MERGIN,
-                                  0.0,
-                                  0.0);
+                                  SCREEN_BOUNDS.size.width - 20 - _webImageView.frame.size.width,
+                                  40.0);
         _text1.font = [UIFont systemFontOfSize:14.0f];
         [_text1 setTextColor:RGB(0, 0, 0)];
         [self addSubview:_text1];

@@ -10,6 +10,6 @@
 
 @interface SampleData : NSObject
 @property (nonatomic, strong) NSString *imageUrl;
-@property (nonatomic, strong) NSString *labe;
+@property (nonatomic, strong) NSString *label;
 -(NSURL*) imageUrl2NSURL;
 @end
