@@ -8,8 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WebApiSample : NSObject <NSURLConnectionDataDelegate>
+// apiレスポンスのdelegate
+@protocol WebApiSampleConnectionDataDelegate <NSObject>
 
-+ (NSURLConnection *)fechApi:(id <NSURLConnectionDataDelegate>) delegateClass;
+- (void)didSuccess:(NSDictionary *)response;
+- (void)didFailWithError:(NSError *)error;
 
 @end
+
+@interface WebApiSample : NSObject <NSURLConnectionDataDelegate>
+
+@property (nonatomic, retain) id<WebApiSampleConnectionDataDelegate> delegate;
+@property (nonatomic, retain) NSMutableData *receivedData;
+
+- (NSURLConnection *)fechApi:(id<WebApiSampleConnectionDataDelegate>) delegate;
+
+@end
+

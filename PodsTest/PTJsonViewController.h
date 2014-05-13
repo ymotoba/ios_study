@@ -10,8 +10,6 @@
 #import <QuartzCore/QuartzCore.h>
 #import "WebApiSample.h"
 
-@interface PTJsonViewController : UIViewController <NSURLConnectionDataDelegate>
-
-@property (nonatomic, retain) NSMutableData *receivedData;
+@interface PTJsonViewController : UIViewController <WebApiSampleConnectionDataDelegate>
 
 @end
