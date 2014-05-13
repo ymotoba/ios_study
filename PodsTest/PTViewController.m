@@ -72,6 +72,10 @@
 	} else if (index == 1) {
         PTJsonViewController *jsonViewController = [[PTJsonViewController alloc] init];
         [self.navigationController pushViewController:jsonViewController animated:TRUE];
+    // table
+    } else if (index == 2) {
+        PTTableSampleViewController *tableSampleViewController = [[PTTableSampleViewController alloc] init];
+        [self.navigationController pushViewController:tableSampleViewController animated:TRUE];
     }
 }
 
