@@ -74,7 +74,7 @@
 	textRect.origin.x = cell.text1.frame.origin.x;
 	textRect.origin.y = cell.text1.frame.origin.y;
 	cell.text1.frame = textRect;
-	// 背景
+
 //    UIImage *(^createImageFromUIColor)(UIColor *) = ^(UIColor *color)
 //    {
 //        CGRect rect = CGRectMake(0, 0, 1, 1);
@@ -86,8 +86,6 @@
 //        UIGraphicsEndImageContext();
 //        return img;
 //    };
-	[cell.backgroundButton setBackgroundImage:[self createImageFromUIColor:RGB(200, 200, 200)] forState:UIControlStateHighlighted];
-
 	return cell;
 }
 
@@ -110,17 +108,4 @@
 	// 本当は上記で得られるサイズを元に動的に高さを変える必要があるけど、練習なので固定
 	return 100;
 }
-
-// UIColorからUIImageを生成
-- (UIImage *)createImageFromUIColor:(UIColor *)color {
-	CGRect rect = CGRectMake(0, 0, 1, 1);
-	UIGraphicsBeginImageContext(rect.size);
-	CGContextRef contextRef = UIGraphicsGetCurrentContext();
-	CGContextSetFillColorWithColor(contextRef, [color CGColor]);
-	CGContextFillRect(contextRef, rect);
-	UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
-	UIGraphicsEndImageContext();
-	return img;
-}
-
 @end

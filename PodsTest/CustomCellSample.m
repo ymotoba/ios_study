@@ -28,6 +28,7 @@ static const CGFloat MERGIN = 10.0;
         [[_backgroundButton layer] setBorderColor:[RGB(0, 0, 0) CGColor]];
         [[_backgroundButton layer] setBorderWidth:0.5f];
         [_backgroundButton addTarget:self action:@selector(backgroundButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+        [_backgroundButton setBackgroundImage:[self createImageFromUIColor:RGB(200, 200, 200)] forState:UIControlStateHighlighted];
 
         // label
         _text1 = [[UILabel alloc] init];
@@ -44,6 +45,16 @@ static const CGFloat MERGIN = 10.0;
         [self addSubview:_text1];
     }
     return self;
+}
+- (UIImage *)createImageFromUIColor:(UIColor *)color {
+	CGRect rect = CGRectMake(0, 0, 1, 1);
+	UIGraphicsBeginImageContext(rect.size);
+	CGContextRef contextRef = UIGraphicsGetCurrentContext();
+	CGContextSetFillColorWithColor(contextRef, [color CGColor]);
+	CGContextFillRect(contextRef, rect);
+	UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+	return img;
 }
 
 - (void)awakeFromNib

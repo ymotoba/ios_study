@@ -12,5 +12,4 @@
 
 @interface PTTableSampleViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, retain) NSMutableArray *tableDataArray;
-- (UIImage*) createImageFromUIColor:(UIColor*) color;
 @end
