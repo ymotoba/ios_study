@@ -67,16 +67,23 @@
 		NSArray *tabItemArray = tabBarController.tabBar.items;
 		[[tabItemArray objectAtIndex:0] setTitle:@"Tab1"];
 		[[tabItemArray objectAtIndex:1] setTitle:@"Tab2"];
-        [self.navigationController pushViewController:tabBarController animated:TRUE];
-    // JSON
-	} else if (index == 1) {
-        PTJsonViewController *jsonViewController = [[PTJsonViewController alloc] init];
-        [self.navigationController pushViewController:jsonViewController animated:TRUE];
-    // table
-    } else if (index == 2) {
-        PTTableSampleViewController *tableSampleViewController = [[PTTableSampleViewController alloc] init];
-        [self.navigationController pushViewController:tableSampleViewController animated:TRUE];
-    }
+		[self.navigationController pushViewController:tabBarController animated:TRUE];
+		// JSON
+	}
+	else if (index == 1) {
+		PTJsonViewController *jsonViewController = [[PTJsonViewController alloc] init];
+		[self.navigationController pushViewController:jsonViewController animated:TRUE];
+		// table
+	}
+	else if (index == 2) {
+		PTTableSampleViewController *tableSampleViewController = [[PTTableSampleViewController alloc] init];
+		[self.navigationController pushViewController:tableSampleViewController animated:TRUE];
+		// coredata
+	}
+	else if (index == 6) {
+		PTCoreDataSampleViewController *coreDataSampleViewController = [[PTCoreDataSampleViewController alloc] init];
+		[self.navigationController pushViewController:coreDataSampleViewController animated:TRUE];
+	}
 }
 
 // セルの定義
