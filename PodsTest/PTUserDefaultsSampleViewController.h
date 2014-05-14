@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserDefaultsSampleModel.h"
+#import "PTReadUserDefaultsViewController.h"
 
 @interface PTUserDefaultsSampleViewController : UIViewController
-
+@property (nonatomic, retain) UITextField *textField;
 @end
