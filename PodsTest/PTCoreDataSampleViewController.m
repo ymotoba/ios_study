@@ -12,6 +12,8 @@
 
 @end
 
+static const CGFloat kMergin = 10.0;
+
 @implementation PTCoreDataSampleViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -27,6 +29,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // データを表示するテーブル
+    UITableView *personListTableView = [[UITableView alloc] init];
+    personListTableView.frame = CGRectMake(kMergin, 0, SCREEN_BOUNDS.size.width - kMergin * 2, SCREEN_BOUNDS.size.height);
+    [self.view addSubview:personListTableView];
+    // データ追加用ナビゲーション右ボタン
+    UIBarButtonItem *addPersonBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Add" style:UIBarButtonItemStyleDone target:self action:@selector(addPersonButtonTapped:)];
+    self.navigationItem.rightBarButtonItem = addPersonBarButtonItem;
+}
+
+- (void) addPersonButtonTapped:(id) sender {
+    PTCoreDataSampleAddPersonViewController *coreDataSampleAddPersonViewController = [[PTCoreDataSampleAddPersonViewController alloc] init];
+    [self.navigationController pushViewController:coreDataSampleAddPersonViewController animated:TRUE];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,16 +48,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

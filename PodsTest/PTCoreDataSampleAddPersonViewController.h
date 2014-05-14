@@ -1,5 +1,5 @@
 //
-//  PTCoreDataSampleViewController.h
+//  PTCoreDataSampleAddPersonViewController.h
 //  PodsTest
 //
 //  Created by 元場羊二郎 on 2014/05/14.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PTCoreDataSampleAddPersonViewController.h"
 
-@interface PTCoreDataSampleViewController : UIViewController
+@interface PTCoreDataSampleAddPersonViewController : UIViewController
 
 @end
