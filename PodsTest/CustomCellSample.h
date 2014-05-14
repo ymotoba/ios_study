@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <SDWebimage/UIImageView+WebCache.h>
 #import <UIImageView+UIActivityIndicatorForSDWebImage.h>
+#import "ImageUtil.h"
 
 @interface CustomCellSample : UITableViewCell
 @property (nonatomic, retain) UILabel *text1;

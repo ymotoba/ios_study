@@ -19,6 +19,10 @@
 #define RGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 #define RGBA(r, g, b, a)    [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 
+#define APP_FONT_L ([UIFont fontWithName:@"AppleGothic" size:20])
+#define APP_FONT_M ([UIFont fontWithName:@"AppleGothic" size:14])
+#define APP_FONT_S ([UIFont fontWithName:@"AppleGothic" size:10])
+
 #ifndef PodsTest_Macro_h
 #define PodsTest_Macro_h
 

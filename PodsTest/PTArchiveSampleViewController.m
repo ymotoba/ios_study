@@ -12,6 +12,8 @@
 
 @end
 
+static const CGFloat MERGIN = 10.0;
+
 @implementation PTArchiveSampleViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -27,6 +29,22 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // アーカイブする対象の文字列入力TextField
+    UITextField *archiveTargetTextField = [[UITextField alloc] init];
+    archiveTargetTextField.frame = CGRectMake(MERGIN, APP_SCREEN_TOP + MERGIN, SCREEN_BOUNDS.size.width - MERGIN * 2, 40.0);
+    archiveTargetTextField.borderStyle = UITextBorderStyleRoundedRect;
+    [self.view addSubview:archiveTargetTextField];
+
+    // アーカイブ開始ボタン
+    UIButton *archiveStartButton = [[UIButton alloc] init];
+    archiveStartButton.frame = CGRectMake(MERGIN, archiveTargetTextField.frame.origin.y + archiveTargetTextField.frame.size.height + MERGIN,
+                                          SCREEN_BOUNDS.size.width - MERGIN * 2, 40.0);
+    [archiveStartButton setTitle:@"Start Archive" forState:UIControlStateNormal];
+    [archiveStartButton.titleLabel setFont:APP_FONT_M];
+    [archiveStartButton setTitleColor:RGB(0, 0, 0) forState:UIControlStateNormal];
+    [archiveStartButton setTitleColor:RGB(200, 200, 200) forState:UIControlStateHighlighted];
+    [archiveStartButton setBackgroundImage:[ImageUtil createImageFromUIColor:RGB(65, 105, 225)] forState:UIControlStateNormal];
+    [self.view addSubview:archiveStartButton];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,16 +52,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

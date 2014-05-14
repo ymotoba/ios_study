@@ -18,6 +18,7 @@
 		AB0D16141921E94200E69356 /* SampleData.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D16131921E94200E69356 /* SampleData.m */; };
 		AB0D16181922ED1300E69356 /* PTCoreDataSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D16171922ED1300E69356 /* PTCoreDataSampleViewController.m */; };
 		AB0D161C1922F65700E69356 /* PTArchiveSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D161B1922F65700E69356 /* PTArchiveSampleViewController.m */; };
+		AB0D161F1923017F00E69356 /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D161E1923017F00E69356 /* ImageUtil.m */; };
 		AB596582191B485F005BD271 /* PTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB596581191B485F005BD271 /* PTViewController.m */; };
 		AB7E86BA192095CE001F6537 /* WebApiSample.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7E86B9192095CE001F6537 /* WebApiSample.m */; };
 		AB9E64A8191B42ED00084ED6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9E64A7191B42ED00084ED6 /* Foundation.framework */; };
@@ -75,6 +76,8 @@
 		AB0D16171922ED1300E69356 /* PTCoreDataSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCoreDataSampleViewController.m; sourceTree = "<group>"; };
 		AB0D161A1922F65700E69356 /* PTArchiveSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTArchiveSampleViewController.h; sourceTree = "<group>"; };
 		AB0D161B1922F65700E69356 /* PTArchiveSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTArchiveSampleViewController.m; sourceTree = "<group>"; };
+		AB0D161D1923017F00E69356 /* ImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtil.h; sourceTree = "<group>"; };
+		AB0D161E1923017F00E69356 /* ImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtil.m; sourceTree = "<group>"; };
 		AB596580191B485F005BD271 /* PTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTViewController.h; sourceTree = "<group>"; };
 		AB596581191B485F005BD271 /* PTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTViewController.m; sourceTree = "<group>"; };
 		AB7E86B8192095CE001F6537 /* WebApiSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebApiSample.h; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 				AB9E64BE191B42ED00084ED6 /* Images.xcassets */,
 				AB9E64BB191B42ED00084ED6 /* PodsTest.xcdatamodeld */,
 				AB9E64B0191B42ED00084ED6 /* Supporting Files */,
+				AB0D161D1923017F00E69356 /* ImageUtil.h */,
+				AB0D161E1923017F00E69356 /* ImageUtil.m */,
 			);
 			path = PodsTest;
 			sourceTree = "<group>";
@@ -429,6 +434,7 @@
 				AB0D16041921A95100E69356 /* Shop.m in Sources */,
 				AB596582191B485F005BD271 /* PTViewController.m in Sources */,
 				AB7E86BA192095CE001F6537 /* WebApiSample.m in Sources */,
+				AB0D161F1923017F00E69356 /* ImageUtil.m in Sources */,
 				AB0D16011921A73500E69356 /* Results.m in Sources */,
 				AB0D160E1921BF4F00E69356 /* PTTableSampleViewController.m in Sources */,
 				AB0D16181922ED1300E69356 /* PTCoreDataSampleViewController.m in Sources */,

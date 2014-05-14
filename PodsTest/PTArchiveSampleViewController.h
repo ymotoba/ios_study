@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ImageUtil.h"
 
 @interface PTArchiveSampleViewController : UIViewController
 

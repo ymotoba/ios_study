@@ -13,6 +13,7 @@
 #import "Gourmet.h"
 #import "DCParserConfiguration.h"
 #import "DCArrayMapping.h"
+#import "ImageUtil.h"
 
 @interface PTJsonViewController : UIViewController <WebApiSampleConnectionDataDelegate>
 

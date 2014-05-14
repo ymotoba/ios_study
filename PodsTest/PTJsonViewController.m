@@ -31,24 +31,12 @@
     [startFetchButton setTitle:@"start!" forState:UIControlStateNormal];
     [startFetchButton setTitleColor:RGB(0, 0, 0) forState:UIControlStateNormal];
     [startFetchButton setTitleColor:RGB(128, 128, 128) forState:UIControlStateHighlighted];
-    [[startFetchButton layer] setCornerRadius:10.0f];
     [startFetchButton setClipsToBounds:TRUE];
+    [[startFetchButton layer] setCornerRadius:10.0f];
     [[startFetchButton layer] setBorderColor:[RGB(0, 0, 0) CGColor]];
     [[startFetchButton layer] setBorderWidth:1.0f];
     [startFetchButton addTarget:self action:@selector(clickStartFetchButton:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:startFetchButton];
-
-    UIImage *(^createImageFromUIColor)(UIColor *) = ^(UIColor *color)
-    {
-        CGRect rect = CGRectMake(0, 0, 1, 1);
-        UIGraphicsBeginImageContext(rect.size);
-        CGContextRef contextRef = UIGraphicsGetCurrentContext();
-        CGContextSetFillColorWithColor(contextRef, [color CGColor]);
-        CGContextFillRect(contextRef, rect);
-        UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
-        return img;
-    };
     UIButton *backgroundButton = [[UIButton alloc] init];
     backgroundButton.frame = CGRectMake(startFetchButton.frame.origin.x,
                                         startFetchButton.frame.origin.y + startFetchButton.frame.size.height + 10.0,
@@ -59,7 +47,7 @@
     [backgroundButton setClipsToBounds:TRUE];
     [[backgroundButton layer] setBorderColor:[RGB(0, 0, 0) CGColor]];
     [[backgroundButton layer] setBorderWidth:0.5f];
-    [backgroundButton setBackgroundImage:createImageFromUIColor(RGB(128, 128 ,128)) forState:UIControlStateHighlighted];
+    [backgroundButton setBackgroundImage:[ImageUtil createImageFromUIColor:RGB(128, 128 ,128)] forState:UIControlStateHighlighted];
     [self.view addSubview:backgroundButton];
 //    [backgroundButton addTarget:self action:@selector(backgroundButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
 }
