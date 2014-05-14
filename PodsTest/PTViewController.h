@@ -14,6 +14,7 @@
 #import "PTTableSampleViewController.h"
 #import "PTCoreDataSampleViewController.h"
 #import "PTArchiveSampleViewController.h"
+#import "PTUserDefaultsSampleViewController.h"
 
 @interface PTViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 

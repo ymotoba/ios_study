@@ -34,7 +34,7 @@
 
 // テーブルビューに表示するリスト登録
 - (void)setupExampleTitleList {
-	_exampleTitleList = @[@"Tab", @"JSON", @"Table", @"XML", @"json2table", @"navigation", @"coredata", @"Archive", @"pager"];
+	_exampleTitleList = @[@"Tab", @"JSON", @"Table", @"XML", @"json2table", @"navigation", @"coredata", @"Archive", @"UserDefaults", @"pager"];
 }
 
 - (void)setExampleTableView {
@@ -84,10 +84,15 @@
 		PTCoreDataSampleViewController *coreDataSampleViewController = [[PTCoreDataSampleViewController alloc] init];
 		[self.navigationController pushViewController:coreDataSampleViewController animated:TRUE];
 	}
-    // coredata
+    // Archive
     else if (index == 7) {
         PTArchiveSampleViewController *archiveSampleViewController = [[PTArchiveSampleViewController alloc] init];
         [self.navigationController pushViewController:archiveSampleViewController animated:TRUE];
+    }
+    // UserDefaults
+    else if (index == 8) {
+        PTUserDefaultsSampleViewController *userDefaultsSampleViewController = [[PTUserDefaultsSampleViewController alloc] init];
+        [self.navigationController pushViewController:userDefaultsSampleViewController animated:TRUE];
     }
 }
 
