@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "ImageUtil.h"
+#import "ArchiveSampleModel.h"
 
 @interface PTArchiveSampleViewController : UIViewController
-
+@property (nonatomic, retain) UITextField *archiveTargetTextField;
 @end
