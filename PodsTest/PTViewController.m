@@ -34,7 +34,7 @@
 
 // テーブルビューに表示するリスト登録
 - (void)setupExampleTitleList {
-	_exampleTitleList = @[@"Tab", @"JSON", @"Table", @"XML", @"json2table", @"navigation", @"coredata"];
+	_exampleTitleList = @[@"Tab", @"JSON", @"Table", @"XML", @"json2table", @"navigation", @"coredata", @"Archive", @"pager"];
 }
 
 - (void)setExampleTableView {
@@ -68,22 +68,27 @@
 		[[tabItemArray objectAtIndex:0] setTitle:@"Tab1"];
 		[[tabItemArray objectAtIndex:1] setTitle:@"Tab2"];
 		[self.navigationController pushViewController:tabBarController animated:TRUE];
-		// JSON
 	}
+    // JSON
 	else if (index == 1) {
 		PTJsonViewController *jsonViewController = [[PTJsonViewController alloc] init];
 		[self.navigationController pushViewController:jsonViewController animated:TRUE];
-		// table
 	}
+    // table
 	else if (index == 2) {
 		PTTableSampleViewController *tableSampleViewController = [[PTTableSampleViewController alloc] init];
 		[self.navigationController pushViewController:tableSampleViewController animated:TRUE];
-		// coredata
 	}
+    // coredata
 	else if (index == 6) {
 		PTCoreDataSampleViewController *coreDataSampleViewController = [[PTCoreDataSampleViewController alloc] init];
 		[self.navigationController pushViewController:coreDataSampleViewController animated:TRUE];
 	}
+    // coredata
+    else if (index == 7) {
+        PTArchiveSampleViewController *archiveSampleViewController = [[PTArchiveSampleViewController alloc] init];
+        [self.navigationController pushViewController:archiveSampleViewController animated:TRUE];
+    }
 }
 
 // セルの定義

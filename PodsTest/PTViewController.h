@@ -13,6 +13,7 @@
 #import "PTJsonViewController.h"
 #import "PTTableSampleViewController.h"
 #import "PTCoreDataSampleViewController.h"
+#import "PTArchiveSampleViewController.h"
 
 @interface PTViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
