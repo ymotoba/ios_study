@@ -26,6 +26,7 @@
 		AB0D162F192361F300E69356 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D162E192361F300E69356 /* Person.m */; };
 		AB0D16321923621500E69356 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D16311923621500E69356 /* Address.m */; };
 		AB0D163519236CF100E69356 /* PTCoreDataSampleAddPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D163419236CF100E69356 /* PTCoreDataSampleAddPersonViewController.m */; };
+		AB0D16391924387600E69356 /* UIView+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D16381924387600E69356 /* UIView+Extention.m */; };
 		AB596582191B485F005BD271 /* PTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB596581191B485F005BD271 /* PTViewController.m */; };
 		AB7E86BA192095CE001F6537 /* WebApiSample.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7E86B9192095CE001F6537 /* WebApiSample.m */; };
 		AB9E64A8191B42ED00084ED6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9E64A7191B42ED00084ED6 /* Foundation.framework */; };
@@ -99,6 +100,8 @@
 		AB0D16311923621500E69356 /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
 		AB0D163319236CF100E69356 /* PTCoreDataSampleAddPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCoreDataSampleAddPersonViewController.h; sourceTree = "<group>"; };
 		AB0D163419236CF100E69356 /* PTCoreDataSampleAddPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCoreDataSampleAddPersonViewController.m; sourceTree = "<group>"; };
+		AB0D16371924387600E69356 /* UIView+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extention.h"; sourceTree = "<group>"; };
+		AB0D16381924387600E69356 /* UIView+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extention.m"; sourceTree = "<group>"; };
 		AB596580191B485F005BD271 /* PTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTViewController.h; sourceTree = "<group>"; };
 		AB596581191B485F005BD271 /* PTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTViewController.m; sourceTree = "<group>"; };
 		AB7E86B8192095CE001F6537 /* WebApiSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebApiSample.h; sourceTree = "<group>"; };
@@ -230,6 +233,15 @@
 			name = UserDefaults;
 			sourceTree = "<group>";
 		};
+		AB0D16361924382B00E69356 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB0D16371924387600E69356 /* UIView+Extention.h */,
+				AB0D16381924387600E69356 /* UIView+Extention.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		AB9E649B191B42EC00084ED6 = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +285,7 @@
 				AB596581191B485F005BD271 /* PTViewController.m */,
 				ABBD3E37191C6C0600E7A895 /* CustomUITableViewCell.h */,
 				ABBD3E38191C6C0600E7A895 /* CustomUITableViewCell.m */,
+				AB0D16361924382B00E69356 /* View */,
 				ABE96D7C19204D1C002DC3C4 /* Tab */,
 				ABE96D8619208EAB002DC3C4 /* json */,
 				AB0D160B1921BEDB00E69356 /* table */,
@@ -501,6 +514,7 @@
 				ABE96D8919208EDD002DC3C4 /* PTJsonViewController.m in Sources */,
 				AB0D160A1921B0FF00E69356 /* Pc.m in Sources */,
 				AB0D162C19233DF200E69356 /* PTReadUserDefaultsViewController.m in Sources */,
+				AB0D16391924387600E69356 /* UIView+Extention.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

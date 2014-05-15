@@ -15,4 +15,5 @@
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
     #import "Global.h" // 共通ヘッダー
+    #import "UIView+Extention.h"
 #endif

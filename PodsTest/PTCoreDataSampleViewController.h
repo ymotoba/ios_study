@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "PTCoreDataSampleAddPersonViewController.h"
+#import "PTAppDelegate.h"
 
-@interface PTCoreDataSampleViewController : UIViewController
+@interface PTCoreDataSampleViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
