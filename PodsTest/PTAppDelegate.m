@@ -24,6 +24,9 @@
     PTViewController *ptViewController = [[PTViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:ptViewController];
     [self.window setRootViewController:nav];
+
+    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"PodsTest.sqlite"];
+
     return YES;
 }
 
@@ -53,6 +56,7 @@
 {
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+    [MagicalRecord cleanUp];
 }
 
 - (void)saveContext

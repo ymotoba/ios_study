@@ -44,6 +44,7 @@
 		AB9E64C9191B42ED00084ED6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9E64AD191B42ED00084ED6 /* CoreData.framework */; };
 		AB9E64D1191B42ED00084ED6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB9E64CF191B42ED00084ED6 /* InfoPlist.strings */; };
 		AB9E64D3191B42ED00084ED6 /* PodsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E64D2191B42ED00084ED6 /* PodsTestTests.m */; };
+		ABB1C17B1925AE5C00C24954 /* PTMagicalRecordSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB1C17A1925AE5C00C24954 /* PTMagicalRecordSampleViewController.m */; };
 		ABBD3E39191C6C0600E7A895 /* CustomUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBD3E38191C6C0600E7A895 /* CustomUITableViewCell.m */; };
 		ABE96D7F192050A5002DC3C4 /* PTTab1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE96D7E192050A5002DC3C4 /* PTTab1ViewController.m */; };
 		ABE96D82192050B3002DC3C4 /* PTTab2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE96D81192050B3002DC3C4 /* PTTab2ViewController.m */; };
@@ -124,6 +125,8 @@
 		AB9E64CE191B42ED00084ED6 /* PodsTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PodsTestTests-Info.plist"; sourceTree = "<group>"; };
 		AB9E64D0191B42ED00084ED6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB9E64D2191B42ED00084ED6 /* PodsTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PodsTestTests.m; sourceTree = "<group>"; };
+		ABB1C1791925AE5C00C24954 /* PTMagicalRecordSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTMagicalRecordSampleViewController.h; sourceTree = "<group>"; };
+		ABB1C17A1925AE5C00C24954 /* PTMagicalRecordSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTMagicalRecordSampleViewController.m; sourceTree = "<group>"; };
 		ABBD3E36191B7FA100E7A895 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		ABBD3E37191C6C0600E7A895 /* CustomUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUITableViewCell.h; sourceTree = "<group>"; };
 		ABBD3E38191C6C0600E7A895 /* CustomUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUITableViewCell.m; sourceTree = "<group>"; };
@@ -292,6 +295,7 @@
 				AB0D16151922ECC500E69356 /* coredata */,
 				AB0D16191922F63100E69356 /* archive */,
 				AB0D16231923318300E69356 /* UserDefaults */,
+				ABB1C1781925AE1A00C24954 /* MagicalRecord */,
 				AB9E64BE191B42ED00084ED6 /* Images.xcassets */,
 				AB9E64BB191B42ED00084ED6 /* PodsTest.xcdatamodeld */,
 				AB9E64B0191B42ED00084ED6 /* Supporting Files */,
@@ -328,6 +332,15 @@
 				AB9E64CF191B42ED00084ED6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABB1C1781925AE1A00C24954 /* MagicalRecord */ = {
+			isa = PBXGroup;
+			children = (
+				ABB1C1791925AE5C00C24954 /* PTMagicalRecordSampleViewController.h */,
+				ABB1C17A1925AE5C00C24954 /* PTMagicalRecordSampleViewController.m */,
+			);
+			name = MagicalRecord;
 			sourceTree = "<group>";
 		};
 		ABE96D7C19204D1C002DC3C4 /* Tab */ = {
@@ -488,6 +501,7 @@
 			files = (
 				AB0D16071921B0DD00E69356 /* Photo.m in Sources */,
 				AB0D16041921A95100E69356 /* Shop.m in Sources */,
+				ABB1C17B1925AE5C00C24954 /* PTMagicalRecordSampleViewController.m in Sources */,
 				AB596582191B485F005BD271 /* PTViewController.m in Sources */,
 				AB7E86BA192095CE001F6537 /* WebApiSample.m in Sources */,
 				AB0D161F1923017F00E69356 /* ImageUtil.m in Sources */,

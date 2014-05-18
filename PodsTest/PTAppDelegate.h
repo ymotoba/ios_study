@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData+MagicalRecord.h>
 
 @interface PTAppDelegate : UIResponder <UIApplicationDelegate>
 
