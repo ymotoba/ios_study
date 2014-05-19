@@ -11,8 +11,15 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="address" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Address" syncable="YES"/>
     </entity>
+    <entity name="Shop" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shopImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tel" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="Address" positionX="-74" positionY="-18" width="128" height="118"/>
         <element name="Person" positionX="-2" positionY="-148" width="128" height="73"/>
+        <element name="Shop" positionX="-486" positionY="-207" width="128" height="103"/>
     </elements>
 </model>
