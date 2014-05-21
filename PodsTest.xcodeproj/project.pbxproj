@@ -27,6 +27,7 @@
 		AB0D16321923621500E69356 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D16311923621500E69356 /* Address.m */; };
 		AB0D163519236CF100E69356 /* PTCoreDataSampleAddPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D163419236CF100E69356 /* PTCoreDataSampleAddPersonViewController.m */; };
 		AB0D16391924387600E69356 /* UIView+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D16381924387600E69356 /* UIView+Extention.m */; };
+		AB343FEA192CA04100E2F3A5 /* PTJson2TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB343FE9192CA04100E2F3A5 /* PTJson2TableViewController.m */; };
 		AB596582191B485F005BD271 /* PTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB596581191B485F005BD271 /* PTViewController.m */; };
 		AB7E86BA192095CE001F6537 /* WebApiSample.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7E86B9192095CE001F6537 /* WebApiSample.m */; };
 		AB9E64A8191B42ED00084ED6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9E64A7191B42ED00084ED6 /* Foundation.framework */; };
@@ -103,6 +104,8 @@
 		AB0D163419236CF100E69356 /* PTCoreDataSampleAddPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCoreDataSampleAddPersonViewController.m; sourceTree = "<group>"; };
 		AB0D16371924387600E69356 /* UIView+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extention.h"; sourceTree = "<group>"; };
 		AB0D16381924387600E69356 /* UIView+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extention.m"; sourceTree = "<group>"; };
+		AB343FE8192CA04100E2F3A5 /* PTJson2TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTJson2TableViewController.h; sourceTree = "<group>"; };
+		AB343FE9192CA04100E2F3A5 /* PTJson2TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTJson2TableViewController.m; sourceTree = "<group>"; };
 		AB596580191B485F005BD271 /* PTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTViewController.h; sourceTree = "<group>"; };
 		AB596581191B485F005BD271 /* PTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTViewController.m; sourceTree = "<group>"; };
 		AB7E86B8192095CE001F6537 /* WebApiSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebApiSample.h; sourceTree = "<group>"; };
@@ -245,6 +248,15 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		AB343FE7192CA01B00E2F3A5 /* json2table */ = {
+			isa = PBXGroup;
+			children = (
+				AB343FE8192CA04100E2F3A5 /* PTJson2TableViewController.h */,
+				AB343FE9192CA04100E2F3A5 /* PTJson2TableViewController.m */,
+			);
+			name = json2table;
+			sourceTree = "<group>";
+		};
 		AB9E649B191B42EC00084ED6 = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +304,7 @@
 				ABE96D7C19204D1C002DC3C4 /* Tab */,
 				ABE96D8619208EAB002DC3C4 /* json */,
 				AB0D160B1921BEDB00E69356 /* table */,
+				AB343FE7192CA01B00E2F3A5 /* json2table */,
 				AB0D16151922ECC500E69356 /* coredata */,
 				AB0D16191922F63100E69356 /* archive */,
 				AB0D16231923318300E69356 /* UserDefaults */,
@@ -521,6 +534,7 @@
 				AB0D16111921C0CE00E69356 /* CustomCellSample.m in Sources */,
 				AB9E64BA191B42ED00084ED6 /* PTAppDelegate.m in Sources */,
 				AB9E64BD191B42ED00084ED6 /* PodsTest.xcdatamodeld in Sources */,
+				AB343FEA192CA04100E2F3A5 /* PTJson2TableViewController.m in Sources */,
 				AB9E64B6191B42ED00084ED6 /* main.m in Sources */,
 				AB0D1622192309AE00E69356 /* ArchiveSampleModel.m in Sources */,
 				AB0D161C1922F65700E69356 /* PTArchiveSampleViewController.m in Sources */,
