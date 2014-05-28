@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebApiSample.h"
 
-@interface PTJson2TableViewController : UIViewController
+@interface PTJson2TableViewController : UIViewController <WebApiSampleConnectionDataDelegate>
 
 @end

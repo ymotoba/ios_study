@@ -28,6 +28,7 @@
 		AB0D163519236CF100E69356 /* PTCoreDataSampleAddPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D163419236CF100E69356 /* PTCoreDataSampleAddPersonViewController.m */; };
 		AB0D16391924387600E69356 /* UIView+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D16381924387600E69356 /* UIView+Extention.m */; };
 		AB343FEA192CA04100E2F3A5 /* PTJson2TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB343FE9192CA04100E2F3A5 /* PTJson2TableViewController.m */; };
+		AB343FEE192CA9AD00E2F3A5 /* GourmetShop.m in Sources */ = {isa = PBXBuildFile; fileRef = AB343FED192CA9AD00E2F3A5 /* GourmetShop.m */; };
 		AB596582191B485F005BD271 /* PTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB596581191B485F005BD271 /* PTViewController.m */; };
 		AB7E86BA192095CE001F6537 /* WebApiSample.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7E86B9192095CE001F6537 /* WebApiSample.m */; };
 		AB9E64A8191B42ED00084ED6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9E64A7191B42ED00084ED6 /* Foundation.framework */; };
@@ -106,6 +107,8 @@
 		AB0D16381924387600E69356 /* UIView+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extention.m"; sourceTree = "<group>"; };
 		AB343FE8192CA04100E2F3A5 /* PTJson2TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTJson2TableViewController.h; sourceTree = "<group>"; };
 		AB343FE9192CA04100E2F3A5 /* PTJson2TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTJson2TableViewController.m; sourceTree = "<group>"; };
+		AB343FEC192CA9AD00E2F3A5 /* GourmetShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GourmetShop.h; sourceTree = "<group>"; };
+		AB343FED192CA9AD00E2F3A5 /* GourmetShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GourmetShop.m; sourceTree = "<group>"; };
 		AB596580191B485F005BD271 /* PTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTViewController.h; sourceTree = "<group>"; };
 		AB596581191B485F005BD271 /* PTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTViewController.m; sourceTree = "<group>"; };
 		AB7E86B8192095CE001F6537 /* WebApiSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebApiSample.h; sourceTree = "<group>"; };
@@ -253,8 +256,18 @@
 			children = (
 				AB343FE8192CA04100E2F3A5 /* PTJson2TableViewController.h */,
 				AB343FE9192CA04100E2F3A5 /* PTJson2TableViewController.m */,
+				AB343FEB192CA98F00E2F3A5 /* model */,
 			);
 			name = json2table;
+			sourceTree = "<group>";
+		};
+		AB343FEB192CA98F00E2F3A5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				AB343FEC192CA9AD00E2F3A5 /* GourmetShop.h */,
+				AB343FED192CA9AD00E2F3A5 /* GourmetShop.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 		AB9E649B191B42EC00084ED6 = {
@@ -517,6 +530,7 @@
 				ABB1C17B1925AE5C00C24954 /* PTMagicalRecordSampleViewController.m in Sources */,
 				AB596582191B485F005BD271 /* PTViewController.m in Sources */,
 				AB7E86BA192095CE001F6537 /* WebApiSample.m in Sources */,
+				AB343FEE192CA9AD00E2F3A5 /* GourmetShop.m in Sources */,
 				AB0D161F1923017F00E69356 /* ImageUtil.m in Sources */,
 				AB0D16011921A73500E69356 /* Results.m in Sources */,
 				AB0D162919233C6A00E69356 /* UserDefaultsSampleModel.m in Sources */,

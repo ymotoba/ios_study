@@ -1,5 +1,8 @@
 PODS:
+  - Bolts (1.1.0)
   - DCKeyValueObjectMapping (1.4)
+  - Facebook-iOS-SDK (3.14.1):
+    - Bolts
   - FSNetworking (0.0.1)
   - JSONKit (1.5pre)
   - MagicalRecord (2.2):
@@ -14,6 +17,7 @@ PODS:
 
 DEPENDENCIES:
   - DCKeyValueObjectMapping (~> 1.4)
+  - Facebook-iOS-SDK (~> 3.14.1)
   - FSNetworking (~> 0.0.1)
   - JSONKit (~> 1.4)
   - MagicalRecord (~> 2.2)
@@ -22,12 +26,14 @@ DEPENDENCIES:
   - UIActivityIndicator-for-SDWebImage (~> 1.0.5)
 
 SPEC CHECKSUMS:
-  DCKeyValueObjectMapping: 39adaf0a54ff6368a22d9221db60f0696d81ad7b
-  FSNetworking: 676e31d646599b2cc3ebc5c1527e503a02eab4f0
-  JSONKit: b1f52f3f522b8602307769511d4fb47c6f856159
-  MagicalRecord: 95d49d74ef752cd52f6ad87bcb474817fc3978cf
-  Reachability: 500bd76bf6cd8ff2c6fb715fc5f44ef6e4c024f2
-  SDWebImage: 7eb273e54ca8a2e506ad9bd5e80c35b2a4d7c95e
-  UIActivityIndicator-for-SDWebImage: 6ab42f95a4066339e2338c3326679a526ce2ef64
+  Bolts: 91c2af8eae1d44e1dd75946a5b0ae04a43ea43e4
+  DCKeyValueObjectMapping: c3561709f296ddffba7768a9d7ccf234307fd3c9
+  Facebook-iOS-SDK: e9b3d5ac54ee3e5e693f4eef470b97911b3d076d
+  FSNetworking: ca816d83bb510d386b6aaef40a403b079439d716
+  JSONKit: efef3bbd3372ff33f96b9c6f34cf4fe18e74ab69
+  MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
+  Reachability: d369b8d7d33730a4bb71d0f601e287da9867c9dd
+  SDWebImage: c6989652c1cdf27cbdf3f56957e2030f825af5bc
+  UIActivityIndicator-for-SDWebImage: d9e46f1592d04cfbeda67bb6d7bba5348558697b
 
 COCOAPODS: 0.32.1

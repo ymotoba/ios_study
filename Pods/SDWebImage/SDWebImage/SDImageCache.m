@@ -310,6 +310,7 @@ BOOL ImageDataHasPNGPreffix(NSData *data) {
     if (key == nil) {
         return;
     }
+
     [self.memCache removeObjectForKey:key];
 
     if (fromDisk) {
